@@ -1,6 +1,6 @@
 const { ObjectId } = require("bson");
 
-const usernamesPartOne = [
+const firstName = [
   "Max",
   "Checo",
   "Lewis",
@@ -23,7 +23,7 @@ const usernamesPartOne = [
   "Zhou",
 ];
 
-const usernamesPartTwo = [
+const lastName = [
   "Verstappen",
   "Perez",
   "Hamilton",
@@ -68,7 +68,7 @@ const possibleReactions = [
 const getRandomArrItem = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
 const getRandomUsername = () =>
-  `${getRandomArrItem(usernamesPartOne)}${getRandomArrItem(usernamesPartTwo)}`;
+  `${getRandomArrItem(firstName)}${getRandomArrItem(lastName)}`;
 
 const users = [];
 
